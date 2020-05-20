@@ -1,0 +1,470 @@
+@media only screen and (max-width: 1440px) {
+
+
+  .row {
+    width: 100%;
+  }
+
+
+  html {
+    font-size: 20px;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Header Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  .header-content {
+    padding: 0 20px;
+    grid-template-columns: 45% 55%;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Services Section ---------------- */
+  /* ------------------------------------------------ */
+}
+
+
+@media only screen and (max-width: 1300px) {
+  /* ------------------------------------------------ */
+  /* ---------------- Header Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  header .header-content {
+    grid-template-areas: "headerText";
+    grid-template-columns: 100%;
+    font-size: 130%;
+    height: 60%;
+  }
+
+
+  body header {
+    position: relative;
+  }
+
+
+  .header-illustration {
+    grid-area: img;
+    position: absolute;
+    z-index: -1000;
+    top: 15%;
+    height: 80%;
+    opacity: 0.3;
+  }
+
+
+  .header-illustration img {
+    height: 100%;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Services Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  body .services-content .single-service {
+    margin-bottom: 20px;
+  }
+
+
+  body .services-content .single-service:last-of-type {
+    margin-bottom: 0px;
+  }
+
+
+  .services-content .single-service p {
+    font-size: 80%;
+  }
+
+
+  body .services-content .text-content {
+    margin-right: 0px;
+  }
+
+
+  body .single-service i {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    font-size: 120%;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Why-us Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  body .reason {
+    width: 100%;
+  }
+
+
+  body .why-us-content .text-content {
+    padding-right: 15px;
+    margin-top: 30px;
+  }
+
+
+  /*CARD PLANS*/
+
+  body .card {
+    width: 25%;
+  }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+  .services-content .single-service {
+    width: 100%;
+  }
+
+
+  /*PLANS*/
+  body .card {
+    width: 29%;
+  }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+  /* ------------------------------------------------ */
+  /* ---------------- Services Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  body .service-img img {
+    height: 100%;
+  }
+
+
+  body .service-img {
+    width: 80%;
+    position: relative;
+    right: -25%;
+  }
+
+
+  body .services-content {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "img"
+      "textContent";
+    grid-gap: 50px;
+  }
+
+
+  body .services-content .text-content {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+
+  .services-content .single-service {
+    width: 100%;
+  }
+
+
+  .services-content .single-service p {
+    font-size: 100%;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Why-us Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  body .why-us-content {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "img"
+      "textContent";
+  }
+
+
+  body .why-us-img img {
+    width: 75%;
+  }
+
+
+  body .why-us-img {
+    width: 100%;
+    position: relative;
+    left: -25%;
+  }
+
+
+  body .why-us .text-content {
+    padding-right: 10px;
+  }
+
+
+  body .why-us .row p {
+    font-size: 110%;
+  }
+
+
+  /*PLANS*/
+  body .card {
+    width: 34%;
+  }
+
+
+  body .card:last-of-type {
+    margin-top: 30px;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* ------------------------------------------------ */
+  /* ---------------- Header Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  header .header-content {
+    font-size: 23px;
+  }
+
+
+  header .logo img {
+    width: 100px;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Services Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  .services-content .single-service {
+    margin-bottom: 20px;
+  }
+
+
+  .services-content .single-service p {
+    font-size: 80%;
+  }
+
+
+  body .services-content .text-content {
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+
+
+  /*plans*/
+
+  body .card {
+    width: 39%;
+  }
+
+
+  body .card:last-of-type {
+    margin-top: 30px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 568px) {
+
+
+  body section h2 {
+    font-size: 180%;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Header Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  header .header-content {
+    font-size: 20px;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Services Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  body .service-img {
+    width: 100%;
+    position: relative;
+    right: -15%;
+  }
+
+
+  body .services-content .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: textContent;
+  }
+
+
+  .services-content .single-service p {
+    font-size: 90%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+  body .services-content .single-service {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Why-us Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  body .why-us-img img {
+    width: 90%;
+  }
+
+
+  body .why-us-img {
+    left: -15%;
+  }
+
+
+  body .why-us .text-content {
+    padding-right: 10px;
+  }
+
+
+  body .why-us .row p {
+    font-size: 90%;
+  }
+
+
+  .text-content .reason {
+    margin-bottom: 25px;
+  }
+
+
+  /*PLANS*/
+
+
+  body .card {
+    width: 55%;
+    margin-top: 30px;
+  }
+
+
+  body .cards-container::after {
+    left: 10%;
+    top: 40%;
+  }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+  /* ------------------------------------------------ */
+  /* ---------------- Header Section ---------------- */
+  /* ------------------------------------------------ */
+
+  header .header-content {
+    font-size: 16px;
+  }
+
+
+  a.btn {
+    display: inline-block;
+    border: 1px solid #4fb0c6;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+
+
+  header .logo img {
+    width: 80px;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Services Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  body .service-img img {
+    width: 90%;
+  }
+
+
+  body .service-img {
+    width: 100%;
+    position: relative;
+    right: -5%;
+  }
+
+
+  /* ------------------------------------------------ */
+  /* ---------------- Why-us Section ---------------- */
+  /* ------------------------------------------------ */
+
+
+  body .why-us-img img {
+    width: 100%;
+  }
+
+
+  body .why-us-img {
+    left: -10%;
+  }
+
+
+  .text-content .reason {
+    flex-wrap: wrap;
+  }
+
+
+  .text-content .reason p {
+    text-align: center;
+  }
+
+  
+  /*PLANS*/
+
+  body .card {
+    width: 79%;
+    margin-top: 30px;
+  }
+
+
+  body .card a {
+    width: 50%;
+    font-size: 80%;
+  }
+
+  
+}
