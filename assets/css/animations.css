@@ -1,0 +1,47 @@
+/*Animations for the Landing page*/
+
+
+@keyframes up-down-sections {
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(-40px);
+    }
+}
+
+
+@keyframes up-down-header {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+
+.service-img img, .why-us-img img {
+    animation-name: up-down-sections;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+.service-img img {
+    animation-direction: alternate;
+}
+
+
+.why-us-img img {
+    animation-direction: alternate-reverse;
+}
+
+
+.header-illustration {
+    animation-name: up-down-header;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
