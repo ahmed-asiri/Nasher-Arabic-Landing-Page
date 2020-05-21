@@ -43,7 +43,7 @@ nav ul li {
 }
 
 
-nav ul li:hover {
+nav ul li.highilgted {
   background-color: #3b75b8;
   color: #f9f9f9;
   width: 120px;
@@ -54,4 +54,9 @@ nav ul li:hover {
 .nav-anchor {
   text-decoration: none;
   color: inherit;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }

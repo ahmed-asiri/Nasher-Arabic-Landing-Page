@@ -15,12 +15,12 @@
     <div class="page-container">
         <header>
             <h1>نشر للتسويق الالكتروني</h1>
-            <nav>
+            <nav id="nav-bar">
                 <ul>
-                    <li><a href="" class="nav-anchor">اتصل بنا</a></li>
-                    <li><a href="" class="nav-anchor">الباقات</a></li>
-                    <li><a href="" class="nav-anchor">لماذا نحن</a></li>
-                    <li><a href="" class="nav-anchor">خدماتنا</a></li>
+                    <li id="call-us"><a id="element-1" href="" class="nav-anchor" >اتصل بنا</a></li>
+                    <li id="plans"><a id="element-2" href="" class="nav-anchor" >الباقات</a></li>
+                    <li id="why-us"><a id="element-3" href="" class="nav-anchor" >لماذا نحن</a></li>
+                    <li id="services"><a id="element-4" href="" class="nav-anchor">خدماتنا</a></li>
                 </ul>
             </nav>
             <div class="row logo">
@@ -159,8 +159,33 @@
                 </div>
             </div>
         </section>
+        <section class="call-us">
+            <div class="row">
+                <h2>اتصل بنا</h2>
+                <form action="#" class="row">
+                    <div class="entry">
+                        <label for="name">اسمك الكامل</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="entry">
+                        <label for="email">البريد الالكتروني</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="entry">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                    <div class="entry">
+                        <label for="calling">عدم الاتصال المتكرر؟</label>
+                        <input type="checkbox" id="calling" name="calling">
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
     </div>
     <script src="https://kit.fontawesome.com/27a9a56b8c.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
