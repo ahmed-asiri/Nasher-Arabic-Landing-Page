@@ -2,8 +2,8 @@
 
 
 function highlightOnScroll() {
+    let sections = document.querySelectorAll('section');
     document.addEventListener('scroll', function () {
-        let sections = document.querySelectorAll('section');
         for (let section1 of sections) {
             let sectionCordinate = section1.getBoundingClientRect();
             let viewPortHieght = window.innerHeight;
@@ -124,7 +124,6 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem2() {
                 for(let li of ulElement.childNodes){
                     if(li.id != eve.target.id){
                         a.parentElement.classList.remove("highilgted");
-                        console.log('hey');
                     }
                 } 
             }, 100);
@@ -132,6 +131,24 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem2() {
     });
 }
 
+
+function scrollDownToElementWithoutOptionsAndFixingSafariProblem3() {
+    let ulElement = document.querySelector('#nav-bar ul');
+    ulElement.addEventListener('click', function (eve) {
+        let liElement;
+        let navigatedSection;
+        if (eve.target.nodeName === 'A') {
+            eve.preventDefault();
+            liElement = document.querySelector('#' + eve.target.id).parentElement;
+            navigatedSection = document.querySelector('.' + liElement.id);
+            setTimeout(() => {
+                navigatedSection.scrollIntoView();
+            }, 100);
+        }
+    });
+}
+
+
 highlightOnScroll();
 
-scrollDownToElementWithoutOptionsAndFixingSafariProblem2();
+scrollDownToElementWithoutOptionsAndFixingSafariProblem3();
