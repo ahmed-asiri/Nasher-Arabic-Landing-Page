@@ -164,7 +164,11 @@
 
 
   body .services-content .text-content {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 10px;
   }
@@ -262,7 +266,11 @@
 
 
   body .services-content .text-content {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     margin-right: 10px;
   }
@@ -314,9 +322,17 @@
 
 
   body .services-content .text-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     grid-area: textContent;
   }
@@ -330,7 +346,12 @@
 
 
   body .services-content .single-service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 80%;
     margin-bottom: 30px;
@@ -419,6 +440,7 @@
     border-radius: 25px;
     text-decoration: none;
     text-align: center;
+    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 
@@ -461,6 +483,7 @@
 
 
   .text-content .reason {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 

@@ -1,47 +1,85 @@
 /*Animations for the Landing page*/
 
 
-@keyframes up-down-sections {
+@-webkit-keyframes up-down-sections {
     from {
+        -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
     to {
+        -webkit-transform: translateY(-40px);
         transform: translateY(-40px);
+    }
+}
+
+
+@keyframes up-down-sections {
+    from {
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+    to {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+}
+
+
+@-webkit-keyframes up-down-header {
+    from {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    to {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
     }
 }
 
 
 @keyframes up-down-header {
     from {
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
     to {
+        -webkit-transform: translateY(-100px);
         transform: translateY(-100px);
     }
 }
 
 
 .service-img img, .why-us-img img {
+    -webkit-animation-name: up-down-sections;
     animation-name: up-down-sections;
+    -webkit-animation-duration: 5s;
     animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
 
 .service-img img {
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
 
 
 .why-us-img img {
+    -webkit-animation-direction: alternate-reverse;
     animation-direction: alternate-reverse;
 }
 
 
 .header-illustration {
+    -webkit-animation-name: up-down-header;
     animation-name: up-down-header;
+    -webkit-animation-duration: 4s;
     animation-duration: 4s;
+    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
