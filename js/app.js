@@ -67,9 +67,10 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem() {
                         for(let a of anchElements){
                             if(a.id != eve.target.id){
                                 a.classList.remove("highilgted");
+                                console.log('hey');
                             }
                         } 
-                    }, 1000);
+                    }, 3000);
                 }
             }
         }
