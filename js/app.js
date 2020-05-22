@@ -77,6 +77,6 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem() {
 }
 
 
+highlightOnScroll();
 
 scrollDownToElementWithoutOptionsAndFixingSafariProblem();
-highlightOnScroll();
