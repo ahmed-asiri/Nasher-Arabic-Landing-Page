@@ -69,7 +69,7 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem() {
                                 a.classList.remove("highilgted");
                             }
                         } 
-                    }, 100);
+                    }, 1000);
                 }
             }
         }
