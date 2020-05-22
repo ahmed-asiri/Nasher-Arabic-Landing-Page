@@ -427,17 +427,32 @@ h2 {
 /*Call us Section*/
 
 
+.call-us {
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
+
 form.row {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+  width: 450px;
+  padding: 30px 0;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 
+
+
 .entry {
-  width: 30%;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -450,22 +465,37 @@ form.row {
 .entry:last-of-type {
   flex-direction: row-reverse;
   align-items: center;
-
+  justify-content: space-evenly;
 }
+
 
 label {
   margin-bottom: 7px;
+  font-size: 90%;
 }
 
 
-input [type="text"], 
+input[type="text"], 
 input[type="email"], 
 input[type="text"], 
-input [type="checkbox"] {
+input[type="checkbox"] {
   font-size: 100%;
   text-align: right;
   font-family: 'Tajawal';
   height: 30px;
   border-radius: 5px;
   border: 1px solid #d6d6d6;
+}
+
+
+input[type="submit"] {
+  display: inline-block;
+  border: 1px solid #6c49b8;
+  width: 120px;
+  padding: 10px 0;
+  border-radius: 25px;
+  background-color: #6c49b8;
+  color: #f9f9f9;
+  font-size: 90%;
+  font-family: 'Tajawal';
 }
