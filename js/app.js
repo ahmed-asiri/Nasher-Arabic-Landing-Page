@@ -121,12 +121,13 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem2() {
             navigatedSection = document.querySelector('.' + liElement.id);
             navigatedSection.scrollIntoView();
             setTimeout(function() {
-                for(let li of ulElement.children){
+                let liElements = ulElement.children;
+                for(let li of liElements){
                     if(li.id != liElement.id){
                         li.classList.remove("highilgted");
                     }
                 } 
-            }, 100);
+            }, 200);
         }
     });
 }
