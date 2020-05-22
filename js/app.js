@@ -35,11 +35,20 @@ function scrollToElement() {
                         li.classList.remove("highlighted");
                     }
                 } 
-            }, 0);
+            }, 1000);
         }
     });
 }
 
+
+
+// IIFE function, invoked when it;s loaded, to prevent the submit button from the default action.
+(function () {
+    let submitBtn = document.querySelector("form input[type=submit]");
+    submitBtn.addEventListener('click', function(eve){
+        eve.preventDefault();
+    });
+})();
 
 
 // THIS VERSION OF CODE WORK FINE ON ALL BROWSERS EXCEPT (Safari and IE)
@@ -57,7 +66,6 @@ function scrollToElement() {
 //         }
 //     });
 // }
-
 
 highlightOnScroll();
 scrollToElement();
