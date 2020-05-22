@@ -122,7 +122,7 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem2() {
             navigatedSection.scrollIntoView();
             setTimeout(function() {
                 for(let li of ulElement.children){
-                    if(li.id != eve.target.id){
+                    if(li.id != liElement.id){
                         li.classList.remove("highilgted");
                     }
                 } 
