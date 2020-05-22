@@ -10,6 +10,19 @@ also for challenging porpuse, i choose to use the rotated side bar, and also add
 - CSS3
 - Vanilla js
 
+#### The arabic fonts used from google fonts are:
+
+- 'Tajawal'
+- 'Almarai'
+
+#### Color Palette:
+- \#6C49B9
+- \#3B75B8
+- \#4FB0C6
+- \#555555
+- \#F9F9F9
+- \#EFEFEF
+
 ## License & copyright 
 
 © Ahmed S Asiri, Jeddah SA. 
