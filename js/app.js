@@ -35,7 +35,7 @@ function scrollToElement() {
                         li.classList.remove("highlighted");
                     }
                 } 
-            }, 200);
+            }, 0);
         }
     });
 }
