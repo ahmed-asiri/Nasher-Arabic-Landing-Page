@@ -127,7 +127,7 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem2() {
                         li.classList.remove("highilgted");
                     }
                 } 
-            }, 200);
+            }, 500);
         }
     });
 }
