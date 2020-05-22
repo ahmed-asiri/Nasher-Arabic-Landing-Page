@@ -63,11 +63,13 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem() {
                 if(anchElement.id === eve.target.id){
                     navElement = document.querySelector('#' + eve.target.id).parentElement;
                     document.querySelector('.' + navElement.id).scrollIntoView();
-                    for(let a of anchElements){
-                        if(a.id != eve.target.id){
-                            a.classList.remove("highilgted");
-                        }
-                    }
+                    setTimeout(() => {
+                        for(let a of anchElements){
+                            if(a.id != eve.target.id){
+                                a.classList.remove("highilgted");
+                            }
+                        } 
+                    }, 100);
                 }
             }
         }
