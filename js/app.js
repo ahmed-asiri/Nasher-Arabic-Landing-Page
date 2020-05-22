@@ -51,6 +51,8 @@ function scrollToElement() {
 })();
 
 
+
+
 // THIS VERSION OF CODE WORK FINE ON ALL BROWSERS EXCEPT (Safari and IE)
 
 // function scrollToElementNotSupportSafariAndIE() {
