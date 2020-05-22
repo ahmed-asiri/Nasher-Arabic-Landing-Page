@@ -124,7 +124,7 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem2() {
                 let liElements = ulElement.children;
                 for(let li of liElements){
                     if(li.id != liElement.id){
-                        a.classList.remove("highilgted");
+                        li.classList.remove("highilgted");
                     }
                 } 
             }, 0);
