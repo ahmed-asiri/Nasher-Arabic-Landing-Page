@@ -121,9 +121,9 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem2() {
             navigatedSection = document.querySelector('.' + liElement.id);
             navigatedSection.scrollIntoView();
             setTimeout(function() {
-                for(let li of ulElement.childNodes){
+                for(let li of ulElement.children){
                     if(li.id != eve.target.id){
-                        a.parentElement.classList.remove("highilgted");
+                        li.classList.remove("highilgted");
                     }
                 } 
             }, 100);
@@ -151,4 +151,4 @@ function scrollDownToElementWithoutOptionsAndFixingSafariProblem3() {
 
 highlightOnScroll();
 
-scrollDownToElementWithoutOptionsAndFixingSafariProblem3();
+scrollDownToElementWithoutOptionsAndFixingSafariProblem2();
