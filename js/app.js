@@ -53,8 +53,25 @@ function scrollDownToElementWithoutOptions() {
     });
 }
 
+function scrollDownToElementWithoutOptionsAndFixingSafariProblem() {
+    let anchElements = document.querySelectorAll('#nav-bar ul a');
+    anchElements[0].parentElement.parentElement.addEventListener('click', function (eve) {
+        let navElement;
+        if (eve.target.nodeName === 'A') {
+            eve.preventDefault();
+            for(let anchElement of anchElements) {
+                if(anchElement.id === eve.target.id){
+                    navElement = document.querySelector('#' + eve.target.id).parentElement;
+                    document.querySelector('.' + navElement.id).scrollIntoView();
+                }else {
+                    anchElement.classList.remove("highilgted");
+                }
+            }
+        }
+    });
+}
 
 
 highlightOnScroll();
 
-scrollDownToElementWithoutOptions();
+scrollDownToElementWithoutOptionsAndFixingSafariProblem();
