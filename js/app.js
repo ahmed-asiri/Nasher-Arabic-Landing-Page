@@ -29,9 +29,32 @@ function highlightOnScroll() {
     });
 }
 
+function scrollDownToElementTest() {
+    let ul = document.querySelector('#nav-bar ul');
+    ul.addEventListener('click', function (eve) {
+        let navElement;
+        if (eve.target.nodeName === 'A') {
+            eve.preventDefault();
+            navElement = document.querySelector('#' + eve.target.id).parentElement;
+            document.querySelector('.' + navElement.id);
+        }
+    });
+}
+
+function scrollDownToElementWithoutOptions() {
+    let ul = document.querySelector('#nav-bar ul');
+    ul.addEventListener('click', function (eve) {
+        let navElement;
+        if (eve.target.nodeName === 'A') {
+            eve.preventDefault();
+            navElement = document.querySelector('#' + eve.target.id).parentElement;
+            document.querySelector('.' + navElement.id).scrollIntoView();
+        }
+    });
+}
 
 
 
 highlightOnScroll();
 
-scrollDownToElement();
+scrollDownToElementWithoutOptions();

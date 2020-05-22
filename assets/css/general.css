@@ -10,6 +10,8 @@ html {
   font-family: "Almarai", Arial, Helvetica, sans-serif;
   color: #555;
   font-size: 22px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 
