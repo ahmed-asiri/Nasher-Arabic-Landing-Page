@@ -653,9 +653,6 @@ footer .row {
 }
 
 
-footer p {
-  margin-bottom: 8px;
-}
 
 
 footer p, footer ul {
@@ -669,6 +666,12 @@ footer p, footer ul {
   font-size: 110%;
 
 }
+
+footer p {
+  margin-bottom: 20px;
+  font-size: 80%;
+}
+
 
 footer ul li {
   list-style-type: none;
